@@ -70,6 +70,9 @@ fun BooksCard(
             .requiredHeight(280.dp) // Устанавливаем фиксированную высоту в 300 dp
             .clickable { onBookClicked(book) },
         elevation = CardDefaults.cardElevation(8.dp), // Применяем эффект приподнятия
+        colors = CardDefaults.cardColors(
+            containerColor = backgroundColor
+        )
 
     ) {
         // Создаем вертикальный столбец для содержимого карточки
@@ -102,6 +105,8 @@ fun BooksCard(
         }
     }
 }
+
+
 //@Preview
 //@Composable
 //fun Preview() = BooksCard(
